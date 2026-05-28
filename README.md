@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# project-one
-=======
 # Mój pierwszy projekt Python
 
 To jest przykładowy projekt Python.
@@ -17,4 +14,3 @@ To jest przykładowy projekt Python.
 ## Co robi projekt
 
 Wyświetla w konsoli prosty tekst powitalny.
->>>>>>> 307743c (Initial commit)
