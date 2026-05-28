@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -31,11 +32,33 @@ MANIFEST
 #   before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
+=======
+# Virtual environment
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+>>>>>>> 307743c (Initial commit)
 
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
+<<<<<<< HEAD
+=======
+# PyInstaller
+*.manifest
+*.spec
+
+>>>>>>> 307743c (Initial commit)
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -46,6 +69,7 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py.cover
 .hypothesis/
 .pytest_cache/
@@ -216,3 +240,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+=======
+*.py,cover
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Local environment files
+.env
+.venv
+
+# Logs
+*.log
+>>>>>>> 307743c (Initial commit)
