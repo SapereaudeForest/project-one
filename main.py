@@ -1,1 +1,1 @@
-print('Witaj w pierwszym projekcie Python!')
+print('Witaj w pierwszym projekcie Python! - wszystkio działa poprawnie.')
