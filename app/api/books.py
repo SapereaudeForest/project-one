@@ -20,10 +20,20 @@ async def read_book_by_category(book_category: str):
         return matching_books
     return {"error": "Category book not found"}
 
+@app.get("/books/{book_author}/")
+async def read_author_books_category_by_query(book_author: str, category: str):
+    books_to_return = []
+    for book in BOOKS:
+        if book.get('author').lower() == book_author.lower() and book.get('category').lower() == category.lower():
+            books_to_return.append(book)
+    if books_to_return:
+        return books_to_return
+    return {"error": "Author or category book not found"}
 
-@app.get("/books/{dynamic_parameter}")
-async def read_all_books(dynamic_parameter: str):
-    return {"dynamic_parameter": dynamic_parameter}
+
+
+
+          
 
 BOOKS = [
     {'title' : 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'},
