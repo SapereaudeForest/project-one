@@ -14,3 +14,12 @@ To jest przykładowy projekt Python.
 ## Co robi projekt
 
 Wyświetla w konsoli prosty tekst powitalny.
+
+## www server run 
+
+uvicorn <MODULE_PATH>:<APP_INSTANCE> --reload
+
+example:
+uvicorn app.api.books:app --reload
+
+
