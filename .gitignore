@@ -47,3 +47,8 @@ coverage.xml
 
 # Logs
 *.log
+
+# CSV files
+*.csv
+
+
