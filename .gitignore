@@ -47,3 +47,10 @@ coverage.xml
 
 # Logs
 *.log
+
+# CSV files
+*.csv
+
+Marmaid_exercise.md
+
+

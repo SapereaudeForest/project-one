@@ -21,7 +21,7 @@ Alternatywnie można uruchomić skrypt setup:
 
 Wyświetla w konsoli prosty tekst powitalny.
 
-## www server ru
+## www server run 
 
 uvicorn <MODULE_PATH>:<APP_INSTANCE> --reload
 
