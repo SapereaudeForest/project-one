@@ -45,6 +45,13 @@ async def create_book(new_book=Body()):
     BOOKS.append(new_book)
     return {"message": "Book created successfully", "book": new_book}
 
+@app.delete("/books/delete_book/{book_title}")
+async def delete_book(book_title: str):
+    for index in range(len(BOOKS)):
+        if BOOKS[index].get('title').lower() == book_title.lower():
+            deleted_book = BOOKS.pop(index)
+            return {"message": "Book deleted successfully", "book": deleted_book}
+    return {"error": "Book not found"}
 
           
 
