@@ -45,6 +45,13 @@ async def create_book(new_book=Body()):
     BOOKS.append(new_book)
     return {"message": "Book created successfully", "book": new_book}
 
+@app.put("/books/update_book")
+async def update_book(updated_book=Body()):
+    for index in range(len(BOOKS)):
+        if BOOKS[index]['title'].lower() == updated_book.get('title').lower():
+            BOOKS[index] = updated_book
+            return {"message": "Book updated successfully", "book": updated_book}
+
 @app.delete("/books/delete_book/{book_title}")
 async def delete_book(book_title: str):
     for index in range(len(BOOKS)):
